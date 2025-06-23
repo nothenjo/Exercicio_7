@@ -30,14 +30,14 @@ document.getElementById("salvar").addEventListener("click", () => {
         nome: formulario.nome.value,
         cep: formulario.cep.value,
         bairro: formulario.bairro.value,
-        rua: formulario.rua.value,
+        rua: formulario.logradouro.value,
         numero: formulario.numero.value,
         cidade: formulario.cidade.value,
         estado: formulario.estado.value,
     }
 
     //Salva no localStorage
-    localStorage.setItem("dadosUsuario". JSON.stringify(dados));
+    localStorage.setItem("dadosUsuario", JSON.stringify(dados));
     alert("Dados salvos com sucesso!");
 });
 
