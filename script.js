@@ -42,7 +42,7 @@ document.getElementById("salvar").addEventListener("click", () => {
 });
 
 //Carrega os dados ao abrir a página
-document.getElementById("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const dadosSalvos = localStorage.getItem("dadosUsuario");
     if (dadosSalvos) {
         const dados = JSON.parse(dadosSalvos);
@@ -51,7 +51,7 @@ document.getElementById("DOMContentLoaded", () => {
         formulario.nome.value = dados.nome || "";
         formulario.cep.value = dados.cep || "";
         formulario.bairro.value = dados.bairro || "";
-        formulario.rua.value = dados.rua || "";
+        formulario.logradouro.value = dados.rua || "";
         formulario.numero.value = dados.numero || "";
         formulario.cidade.value = dados.cidade || "";
         formulario.estado.value = dados.estado || "";
